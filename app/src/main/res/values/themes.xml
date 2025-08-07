@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 将父主题更改为 Theme.AppCompat.Light.NoActionBar 或其他 AppCompat 主题 -->
+    <style name="Theme.Mcpkotlin" parent="Theme.AppCompat.Light.NoActionBar" />
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI 助手"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此输入您的问题..."
+        android:minHeight="48dp"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:gravity="top"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="发送"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnRegisterPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="注册新服务"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnViewServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="查看已注册服务"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView
+        android:id="@+id/scrollViewResponse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/tvResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI 响应将在此处显示。"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </ScrollView>
+</LinearLayout>
